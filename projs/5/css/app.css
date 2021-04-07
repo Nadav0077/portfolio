@@ -1,0 +1,233 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: myFont;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: rgb(46, 42, 42);
+}
+
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+.game-over {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 20%
+}
+
+.restart {
+    font-weight: bold;
+    display: none;
+    position: absolute;
+    left: 40%;
+    border-radius: 4px;
+    background-color: rgb(51, 212, 51);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.restart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.restart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.restart:hover span {
+    padding-right: 25px;
+}
+
+.restart:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+body {
+    background-image: url(../img/background.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pacman {
+    height: 25px;
+    width: 25px;
+}
+
+.rotate-up {
+    /* -ms-transform: rotate(20deg); */
+    /* IE 9 */
+    transform: rotate(270deg);
+}
+
+.rotate-down {
+    transform: rotate(90deg);
+}
+
+.rotate-right {
+    /* IE 9 */
+    transform: rotate(0deg);
+}
+
+.rotate-left {
+    /* IE 9 */
+    transform: rotate(180deg);
+}
+
+.blur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    transition: width 2s;
+}
+
+.board-container {
+    margin: auto;
+    width: 30%;
+    border: 3px solid rgb(71, 13, 71);
+    padding: 10px;
+}
+
+.coin {
+    height: 10px;
+    width: 10px;
+}
+
+.blinky {
+    background-color: white;
+}
+
+.clyde {
+    background-color: orange;
+}
+
+.inky {
+    background-color: cyan;
+}
+
+.pinky {
+    background-color: red;
+}
+
+.ghost {
+    border-radius: 100% 100% 0 0;
+    display: inline-block;
+    height: 16px;
+    margin: 2px;
+    position: relative;
+    width: 12px;
+}
+
+.eyes {
+    height: 6px;
+    left: 50%;
+    margin-left: -4.5px;
+    position: absolute;
+    width: 9px;
+    top: 5px;
+}
+
+.eye {
+    background: #fff;
+    border-radius: 100%;
+    height: 6px;
+    width: 3px;
+}
+
+.iris {
+    background: blue;
+    border-radius: 100%;
+    height: 4px;
+    position: absolute;
+    width: 2px;
+    top: 1px;
+}
+
+.leftEye {
+    float: left;
+}
+
+.leftEye .iris {
+    left: 0.5px;
+}
+
+.rightEye {
+    float: right;
+}
+
+.rightEye .iris {
+    right: 0.5px;
+}
+
+.ghostTail {
+    background-repeat: repeat-x;
+    bottom: -2px;
+    height: 2px;
+    position: absolute;
+    width: 12;
+}
+
+.blinky .ghostTail {
+    background: linear-gradient(-45deg, transparent 75%, red 75%) 0 50%, linear-gradient( 45deg, transparent 75%, red 75%) 0 50%;
+    background-size: 2px 2px, 2px 2px;
+}
+
+.clyde .ghostTail {
+    background: linear-gradient(-45deg, transparent 75%, orange 75%) 0 50%, linear-gradient( 45deg, transparent 75%, orange 75%) 0 50%;
+    background-size: 2px 2px, 2px 2px;
+}
+
+.inky .ghostTail {
+    background: linear-gradient(-45deg, transparent 75%, cyan 75%) 0 50%, linear-gradient( 45deg, transparent 75%, cyan 75%) 0 50%;
+    background-size: 2px 2px, 2px 2px;
+}
+
+.pinky .ghostTail {
+    background: linear-gradient(-45deg, transparent 75%, pink 75%) 0 50%, linear-gradient( 45deg, transparent 75%, pink 75%) 0 50%;
+    background-size: 2px 2px, 2px 2px;
+}
+
+.power-food {
+    width: 18px;
+    height: 18px;
+}
+
+.cherry {
+    width: 18px;
+    height: 18px;
+}
+
+@font-face {
+    font-family: "myFont";
+    src: url("../css/fonts/04B_30__.TTF");
+    /* src:
+  url("css/fonts/Harabara.woff") format("woff"),
+  url("css/fonts/Harabara.otf") format("opentype"),
+  url("css/fonts/Harabara.svg#filename") format("svg"); */
+}

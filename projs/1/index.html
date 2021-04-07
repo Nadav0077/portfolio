@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mines Sweeper</title>
+</head>
+
+<body onload="initGame()">
+    <img class="header" src="img/Header.png" /></br>
+    </br>
+    <div class="timers">
+        <label class="text">Your Time:</label>
+        <label class="minutes">00</label>
+        <label class="colon">:</label>
+        <label class="seconds">00</label></br>
+        <label class="text">Your Best Time:</label>
+        <label class="bestMinutes">00</label>
+        <label class="colon">:</label>
+        <label class="bestSeconds">00</label>
+        </br>
+        </br>
+
+    </div>
+    </br>
+
+    <div class="menu-container">
+        <button class="button2 back" onclick="back()">BACK</button>
+        <button class="button2 restart" onclick="initGame()">&#128512</button>
+        <button class="button2" onclick="changeSize(4)">Easy</button>
+        <button class="button2" onclick="changeSize(8)">Medium</button>
+        <button class="button2" onclick="changeSize(12)">Hard</button><br>
+        <label class="text">Flags:</label>
+        <label class="flag-count">0</label><br>
+        <label class="text">Shown cells:</label>
+        <label class="shown-count">0</label>
+    </div>
+    <div class="board-container"></div>
+    <div class="hearts"></div>
+    <div class="lights"></div>
+    </br>
+    <div class="shield-container" onclick="exposeRandomCell()">
+        <img src="img/shield.png" class="shield">
+        <div class="shield-number">Safe!</div>
+        <div class="shield-text">Safe!</div>
+    </div>
+    <div class="self-mine-container" onclick="addSelfMine()">
+        <img src="img/bomb.gif" class="self-mine">
+        <div class="self-mine-number">4</div>
+        <div class="self-mine-text">Add Mine!</div>
+    </div>
+
+
+    <!-- <img src="img/shield.png" class="shield" onclick="exposeRandomCell()" /> -->
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

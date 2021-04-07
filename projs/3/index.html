@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Nums</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()" style="background-image: url('img/background.gif'); background-attachment: fixed;
+background-size: cover; background-repeat: no-repeat;">
+    <label class="text">Your Time:</label>
+    <label class="minutes">00</label>
+    <label class="colon">:</label>
+    <label class="seconds">00</label></br>
+    <label class="text">Your Best Time:</label>
+    <label class="bestMinutes">00</label>
+    <label class="colon">:</label>
+    <label class="bestSeconds">00</label></br>
+    </br>
+    </br>
+
+    <button class="button" onclick="changeDifficult(4)"><span>Easy</span></button></br>
+    </br>
+
+    <button class="button" onclick="changeDifficult(5)"><span>Medium</span></button></br>
+    </br>
+
+    <button class="button" onclick="changeDifficult(6)"><span>Hard</span></button>
+
+    <table border="0" cellpadding="10">
+        <tbody class="board"></tbody>
+    </table>
+    <img src="img/Win.png" class="win"></br>
+    </br>
+    </br>
+    </br>
+    <button class="restart" onclick="restartGame()"><span>Restart!</span></button>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

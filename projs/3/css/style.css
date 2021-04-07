@@ -1,0 +1,153 @@
+.board td {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    transition: 0.5s;
+    background-color: rgb(171, 171, 241);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.board td:hover {
+    background-color: rgb(111, 228, 88);
+    cursor: pointer;
+}
+
+td.occupied {
+    background-color: lightgray;
+}
+
+table {
+    top: 20%;
+    left: 35%;
+    position: absolute;
+}
+
+.seconds {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.minutes {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.colon {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.bestSeconds {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.bestMinutes {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.win {
+    display: none;
+    position: absolute;
+    left: 30%;
+    top: 20%
+}
+
+.restart {
+    display: none;
+    position: absolute;
+    left: 40%;
+    border-radius: 4px;
+    background-color: rgb(51, 212, 51);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.restart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.restart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.restart:hover span {
+    padding-right: 25px;
+}
+
+.restart:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: rgb(51, 212, 51);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.menu {
+    left: 10%
+}

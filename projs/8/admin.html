@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Document</title>
+</head>
+
+<body onload="init()">
+    <h2>Users Table</h2>
+
+    <div class="table-wrapper">
+        <div class="sortBy"><span class="sortTxt">Sort table by:  </span><button onclick="onSortTable('username')">Username</button>
+            <button onclick="onSortTable('lastLogIn')">Last Login Time</button> <label class="switch">
+                <input class='display-checkbox' onchange="changeDisplay(this)" type="checkbox">
+                <span class="slider"></span>
+              </label>
+        </div>
+        <table class="users-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Last Login Time</th>
+                    <th>Is Admin?</th>
+                    <th>Remove User</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tbody>
+        </table>
+        <div class="user-cards-container">
+
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/admin-controller.js"></script>
+</body>
+
+</html>
